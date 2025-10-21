@@ -1,8 +1,12 @@
-# Agentic-AI-Notebooks
+<h1 align="center">🤖 Agentic-AI-Notebooks</h1>
+
+<p align="center">
+    <img src=".assets/pixrobocar.png" alt="robocar" title="robocar" width="128" >
+</p>
 
 Collection of Colab Notebooks from the Agentic AI Sessions
 
-## Run this Repo Locally
+## 🏃 Run this Repo Locally
 
 Firstly, clone this repo using
 
@@ -46,7 +50,7 @@ Afterwards, head over to the [`Setup` Notebook](.Setup.ipynb) to start setting u
 
 ---
 
-## Environment Variables
+## 🔑 Environment Variables
 
 A lot of the models and frameworks used in the notebooks in this repo require a Private Access Token or some sort of Secret Keys.
 To make loading them easier, follow these steps:
