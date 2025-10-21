@@ -1,3 +1,4 @@
 .env
 .env.DONOTOPEN
 __pycache__
+.markdownlint.jsonc
