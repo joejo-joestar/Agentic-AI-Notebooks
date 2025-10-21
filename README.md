@@ -78,7 +78,7 @@ Here is an ever-growing list of Keys and Private Access Tokens used throughout t
 
 ### [`utils/env_variables_setup.py`](utils/env_variables_setup.py)
 
-This is a simple script with three functions only.
+This is a simple script with only three functions.
 
 It runs the command line `conda` tool to `set`, `unset`, and `list` the variables.
 
