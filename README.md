@@ -4,7 +4,16 @@ Collection of Colab Notebooks from the Agentic AI Sessions
 
 ## Run this Repo Locally
 
-Firstly install Miniconda from [the Anaconda Website](https://docs.anaconda.com/miniconda/install/).
+Firstly, clone this repo using
+
+```bash
+git clone https://github.com/joejo-joestar/Agentic-AI-Notebooks.git
+```
+
+Then install Miniconda from [the Anaconda Website](https://docs.anaconda.com/miniconda/install/).
+
+> [!NOTE]
+> All the notebooks **running locally** assumes you are using a conda environment!
 
 Then open a command prompt, and run the following. This will create and activate a python 3.11 environment called `crp-learning`.
 
