@@ -19,14 +19,14 @@ Then install Miniconda from [the Anaconda Website](https://docs.anaconda.com/min
 > [!NOTE]
 > All the notebooks **running locally** assumes you are using a conda environment!
 
-Then open a command prompt, and run the following. This will create and activate a python 3.11 environment called `crp-learning`.
+Then open a command prompt, and run the following. This will create and activate a python 3.11 environment called `learning`.
 
 ```bash
-conda create -n crp-learning python=3.11.13
-conda activate crp-learning
+conda create -n learning python=3.11.14
+conda activate learning
 ```
 
-After running this, your CMD prompt should have a "`(crp-learning)`" prefixed at the start.
+After running this, your CMD prompt should have a "`(learning)`" prefixed at the start.
 
 > [!TIP]
 > To **deactivate** the environment, simply run:
@@ -38,13 +38,13 @@ After running this, your CMD prompt should have a "`(crp-learning)`" prefixed at
 > To **remove** the environment completely, run:
 >
 > ```bash
-> conda env remove -n crp-learning
+> conda env remove -n learning
 > ```
 
 <br/>
 
 > [!NOTE]
-> Remember to select `crp-learning` as the kernel for all the notebooks!
+> Remember to select `learning` as the kernel for all the notebooks!
 
 Afterwards, head over to the [`Setup` Notebook](.Setup.ipynb) to start setting up the environment!
 
