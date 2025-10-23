@@ -56,7 +56,7 @@ A lot of the models and frameworks used in the notebooks in this repo require a 
 To make loading them easier, follow these steps:
 
 1. Create a `.env` file following the [example file](.env.example) provided.
-2. In the [`Setup` Notebook](.Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
+2. Go to the [`Setup` Notebook](.Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
 
 The script can be found over in [`utils/env_variables_setup.py`](utils/env_variables_setup.py).
 
