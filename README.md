@@ -46,7 +46,7 @@ After running this, your CMD prompt should have a "`(learning)`" prefixed at the
 > [!NOTE]
 > Remember to select `learning` as the kernel for all the notebooks!
 
-Afterwards, head over to the [`Setup` Notebook](.Setup.ipynb) to start setting up the environment!
+Afterwards, head over to the [`Setup` Notebook](_Setup.ipynb) to start setting up the environment!
 
 ---
 
@@ -56,7 +56,7 @@ A lot of the models and frameworks used in the notebooks in this repo require a 
 To make loading them easier, follow these steps:
 
 1. Create a `.env` file following the [example file](.env.example) provided.
-2. Go to the [`Setup` Notebook](.Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
+2. Go to the [`Setup` Notebook](_Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
 
 The script can be found over in [`utils/env_variables_setup.py`](utils/env_variables_setup.py).
 
@@ -72,9 +72,9 @@ Here is an ever-growing list of Keys and Private Access Tokens used throughout t
 <details>
     <summary>Hugging Face Env Variables</summary>
 
-| Token Name                     | `.env` Name          | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
-| :----------------------------- | :------------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Hugging Face User Access Token | `HF_TOKEN`           | [Hugging Face Settings](https://huggingface.co/settings/tokens)                   |                                                                                                                                 [Hugging Face Docs](https://huggingface.co/docs) |
+| Token Name                     | `.env` Name | Where to Get / Setting Value                                    |                                        Reference |
+| :----------------------------- | :---------- | :-------------------------------------------------------------- | -----------------------------------------------: |
+| Hugging Face User Access Token | `HF_TOKEN`  | [Hugging Face Settings](https://huggingface.co/settings/tokens) | [Hugging Face Docs](https://huggingface.co/docs) |
 
 </details>
 
@@ -83,10 +83,10 @@ Here is an ever-growing list of Keys and Private Access Tokens used throughout t
 <details>
     <summary>LLM Env Variables</summary>
 
-| Token Name                     | `.env` Name          | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
-| :----------------------------- | :------------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Google Gemini API Key          | `GOOGLE_API_KEY`     | [Google AI Studio](https://aistudio.google.com/api-keys)                          | [Gemini API Docs](https://ai.google.dev/gemini-api/docs/quickstart) and [LangChain Google Integration Docs](https://docs.langchain.com/oss/python/integrations/providers/google) |
-| OpenAI API Key                 | `OPENAI_API_KEY`     | [OpenAI API Platform](https://platform.openai.com/settings/organization/api-keys) |                                                                                              [OpenAI API Reference](https://platform.openai.com/docs/api-reference/introduction) |
+| Token Name            | `.env` Name      | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
+| :-------------------- | :--------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Google Gemini API Key | `GOOGLE_API_KEY` | [Google AI Studio](https://aistudio.google.com/api-keys)                          | [Gemini API Docs](https://ai.google.dev/gemini-api/docs/quickstart) and [LangChain Google Integration Docs](https://docs.langchain.com/oss/python/integrations/providers/google) |
+| OpenAI API Key        | `OPENAI_API_KEY` | [OpenAI API Platform](https://platform.openai.com/settings/organization/api-keys) |                                                                                              [OpenAI API Reference](https://platform.openai.com/docs/api-reference/introduction) |
 
 </details>
 
@@ -95,12 +95,12 @@ Here is an ever-growing list of Keys and Private Access Tokens used throughout t
 <details>
     <summary>LangSmith Env Variables</summary>
 
-| Token Name                     | `.env` Name          | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
-| :----------------------------- | :------------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| LangSmith API Key              | `LANGSMITH_API_KEY`  | [LangSmith Settings](https://smith.langchain.com/settings)                        |                                                                                                             [LangSmith API Reference](https://docs.langchain.com/langsmith/home) |
-| LangSmith Tracing              | `LANGSMITH_TRACING`  | A Boolean, set the value to `true` or `false` to enable or disable logging traces |                                                                           [LangSmith Observability API Reference](https://docs.langchain.com/langsmith/observability-quickstart) |
-| LangSmith Endpoint             | `LANGSMITH_ENDPOINT` | The LangSmith Endpoint to log the traces (<https://api.smith.langchain.com>)      |                                                                           [LangSmith Observability API Reference](https://docs.langchain.com/langsmith/observability-quickstart) |
-| LangSmith Project Name         | `LANGSMITH_PROJECT`  | The name of the project to log the traces under                                   |                                                                           [LangSmith Observability API Reference](https://docs.langchain.com/langsmith/observability-quickstart) |
+| Token Name             | `.env` Name          | Where to Get / Setting Value                                                      |                                                                                              Reference |
+| :--------------------- | :------------------- | :-------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------: |
+| LangSmith API Key      | `LANGSMITH_API_KEY`  | [LangSmith Settings](https://smith.langchain.com/settings)                        |                                   [LangSmith API Reference](https://docs.langchain.com/langsmith/home) |
+| LangSmith Tracing      | `LANGSMITH_TRACING`  | A Boolean, set the value to `true` or `false` to enable or disable logging traces | [LangSmith Observability API Reference](https://docs.langchain.com/langsmith/observability-quickstart) |
+| LangSmith Endpoint     | `LANGSMITH_ENDPOINT` | The LangSmith Endpoint to log the traces (<https://api.smith.langchain.com>)      | [LangSmith Observability API Reference](https://docs.langchain.com/langsmith/observability-quickstart) |
+| LangSmith Project Name | `LANGSMITH_PROJECT`  | The name of the project to log the traces under                                   | [LangSmith Observability API Reference](https://docs.langchain.com/langsmith/observability-quickstart) |
 
 </details>
 
