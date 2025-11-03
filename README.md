@@ -22,7 +22,7 @@ Then install Miniconda from [the Anaconda Website](https://docs.anaconda.com/min
 Then open a command prompt, and run the following. This will create and activate a python 3.11 environment called `learning`.
 
 ```bash
-conda create -n learning python=3.11.14
+conda create -n learning python=3.13
 conda activate learning
 ```
 
@@ -46,7 +46,7 @@ After running this, your CMD prompt should have a "`(learning)`" prefixed at the
 > [!NOTE]
 > Remember to select `learning` as the kernel for all the notebooks!
 
-Afterwards, head over to the [`Setup` Notebook](_Setup.ipynb) to start setting up the environment!
+Afterwards, head over to the [`Setup` Notebook](./_Setup.ipynb) to start setting up the environment!
 
 ---
 
@@ -55,10 +55,10 @@ Afterwards, head over to the [`Setup` Notebook](_Setup.ipynb) to start setting u
 A lot of the models and frameworks used in the notebooks in this repo require a Private Access Token or some sort of Secret Keys.
 To make loading them easier, follow these steps:
 
-1. Create a `.env` file following the [example file](.env.example) provided.
-2. Go to the [`Setup` Notebook](_Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
+1. Create a `.env` file following the [example file](./.env.example) provided.
+2. Go to the [`Setup` Notebook](./_Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
 
-The script can be found over in [`utils/env_variables_setup.py`](utils/env_variables_setup.py).
+The script can be found over in [`utils/env_variables_setup.py`](./utils/env_variables_setup.py).
 
 > [!NOTE]
 > This script only has to be run once when setting up the environment. Conda environments store the set keys in the environment files
@@ -86,6 +86,7 @@ Here is an ever-growing list of Keys and Private Access Tokens used throughout t
 | Token Name            | `.env` Name      | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
 | :-------------------- | :--------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Google Gemini API Key | `GOOGLE_API_KEY` | [Google AI Studio](https://aistudio.google.com/api-keys)                          | [Gemini API Docs](https://ai.google.dev/gemini-api/docs/quickstart) and [LangChain Google Integration Docs](https://docs.langchain.com/oss/python/integrations/providers/google) |
+| Groq API Key          | `GROQ_API_KEY`   | [Groq Console](https://console.groq.com/keys)                                     |                                                                                                                        [Groq API Docs](https://console.groq.com/docs/quickstart) |
 | OpenAI API Key        | `OPENAI_API_KEY` | [OpenAI API Platform](https://platform.openai.com/settings/organization/api-keys) |                                                                                              [OpenAI API Reference](https://platform.openai.com/docs/api-reference/introduction) |
 
 </details>
