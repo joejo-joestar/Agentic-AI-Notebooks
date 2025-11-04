@@ -14,7 +14,7 @@ Firstly, clone this repo using
 git clone https://github.com/joejo-joestar/Agentic-AI-Notebooks.git
 ```
 
-Then install Miniconda from [the Anaconda Website](https://docs.anaconda.com/miniconda/install/).
+Then install Miniconda from [the Anaconda Website](https://docs.anaconda.com/miniconda/install).
 
 > [!NOTE]
 > All the notebooks **running locally** assumes you are using a conda environment!
@@ -46,7 +46,7 @@ After running this, your CMD prompt should have a "`(learning)`" prefixed at the
 > [!NOTE]
 > Remember to select `learning` as the kernel for all the notebooks!
 
-Afterwards, head over to the [`Setup` Notebook](./_Setup.ipynb) to start setting up the environment!
+Afterwards, head over to the [`Setup` Notebook](./00_setup.ipynb) to start setting up the environment!
 
 ---
 
@@ -56,7 +56,7 @@ A lot of the models and frameworks used in the notebooks in this repo require a 
 To make loading them easier, follow these steps:
 
 1. Create a `.env` file following the [example file](./.env.example) provided.
-2. Go to the [`Setup` Notebook](./_Setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
+2. Go to the [`Setup` Notebook](./00_setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
 
 The script can be found over in [`utils/env_variables_setup.py`](./utils/env_variables_setup.py).
 
