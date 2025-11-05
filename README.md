@@ -113,10 +113,11 @@ This is a simple script with only three functions.
 
 It runs the command line `conda` tool to `set`, `unset`, and `list` the variables.
 
-| Function                            | Description                                                             | CLI Command                           |                                                                                           Reference |
-| :---------------------------------- | :---------------------------------------------------------------------- | :------------------------------------ | --------------------------------------------------------------------------------------------------: |
-| `set_env_variables(env_file: Path)` | Set an environment variable in the conda environment from the .env file | `conda env config vars set KEY=VALUE` |   [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/set.html) |
-| `unset_env_variable(key: str)`      | Unset an environment variable in the conda environment                  | `conda env config vars unset KEY`     | [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/unset.html) |
-| `list_env_variables()`              | List all environment variables set in the conda environment             | `conda env config vars list`          |  [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/list.html) |
+| Function                                 | Description                                                             | CLI Command                           |                                                                                           Reference |
+| :--------------------------------------- | :---------------------------------------------------------------------- | :------------------------------------ | --------------------------------------------------------------------------------------------------: |
+| `set_env_variable(key: str, value: str)` | Set a given environment variable in the conda environment               | `conda env config vars set key=value` |   [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/set.html) |
+| `set_env_variables(env_file: Path)`      | Set an environment variable in the conda environment from the .env file | `conda env config vars set KEY=VALUE` |   [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/set.html) |
+| `unset_env_variable(key: str)`           | Unset an environment variable in the conda environment                  | `conda env config vars unset KEY`     | [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/unset.html) |
+| `list_env_variables()`                   | List all environment variables set in the conda environment             | `conda env config vars list`          |  [documentation](https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/list.html) |
 
 ---

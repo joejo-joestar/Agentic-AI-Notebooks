@@ -7,6 +7,20 @@ import subprocess
 # reference: https://stackoverflow.com/questions/73193119/python-filenotfounderror-winerror-2-the-system-cannot-find-the-file-specifie
 
 
+def set_env_variable(key: str, value: str):
+    """Set an environment variable in the conda env."""
+    if not key or not value:
+        raise ValueError("Both key and value must be provided")
+
+    return_code = subprocess.run(
+        ["conda", "env", "config", "vars", "set", f"{key.strip}={value.strip}"],
+        shell=True,
+    )
+    if return_code.returncode != 0:
+        raise RuntimeError(f"Failed to set environment variable {key}")
+    print(f"Set environment variable {key} successfully.")
+
+
 def set_env_variables(env_file: Path):
     """Set an environment variable in the conda env from the .env file."""
     with open(
