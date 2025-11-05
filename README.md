@@ -19,7 +19,7 @@ Then install Miniconda from [the Anaconda Website](https://docs.anaconda.com/min
 > [!NOTE]
 > All the notebooks **running locally** assumes you are using a conda environment!
 
-Then open a command prompt, and run the following. This will create and activate a python 3.11 environment called `learning`.
+Then open a command prompt, and run the following. This will create and activate a `python 3.13` environment called `learning`.
 
 ```bash
 conda create -n learning python=3.13
@@ -46,7 +46,7 @@ After running this, your CMD prompt should have a "`(learning)`" prefixed at the
 > [!NOTE]
 > Remember to select `learning` as the kernel for all the notebooks!
 
-Afterwards, head over to the [`Setup` Notebook](./00_setup.ipynb) to start setting up the environment!
+Afterwards, head over to the [`Setup` Notebook](./local/00_setup.ipynb) to start setting up the environment!
 
 ---
 
@@ -56,7 +56,7 @@ A lot of the models and frameworks used in the notebooks in this repo require a 
 To make loading them easier, follow these steps:
 
 1. Create a `.env` file following the [example file](./.env.example) provided.
-2. Go to the [`Setup` Notebook](./00_setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
+2. Go to the [`Setup` Notebook](./local/00_setup.ipynb), and run the codeblock under the heading `Setting Environment Variables`
 
 The script can be found over in [`utils/env_variables_setup.py`](./utils/env_variables_setup.py).
 
@@ -70,24 +70,14 @@ The script can be found over in [`utils/env_variables_setup.py`](./utils/env_var
 Here is an ever-growing list of Keys and Private Access Tokens used throughout the notebooks in this repo. Each notebook will also have a list of tokens specific to that notebook.
 
 <details>
-    <summary>Hugging Face Env Variables</summary>
+    <summary>LLM, Models, and Whatnot Env Variables</summary>
 
-| Token Name                     | `.env` Name | Where to Get / Setting Value                                    |                                        Reference |
-| :----------------------------- | :---------- | :-------------------------------------------------------------- | -----------------------------------------------: |
-| Hugging Face User Access Token | `HF_TOKEN`  | [Hugging Face Settings](https://huggingface.co/settings/tokens) | [Hugging Face Docs](https://huggingface.co/docs) |
-
-</details>
-
-<br />
-
-<details>
-    <summary>LLM Env Variables</summary>
-
-| Token Name            | `.env` Name      | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
-| :-------------------- | :--------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Google Gemini API Key | `GOOGLE_API_KEY` | [Google AI Studio](https://aistudio.google.com/api-keys)                          | [Gemini API Docs](https://ai.google.dev/gemini-api/docs/quickstart) and [LangChain Google Integration Docs](https://docs.langchain.com/oss/python/integrations/providers/google) |
-| Groq API Key          | `GROQ_API_KEY`   | [Groq Console](https://console.groq.com/keys)                                     |                                                                                                                        [Groq API Docs](https://console.groq.com/docs/quickstart) |
-| OpenAI API Key        | `OPENAI_API_KEY` | [OpenAI API Platform](https://platform.openai.com/settings/organization/api-keys) |                                                                                              [OpenAI API Reference](https://platform.openai.com/docs/api-reference/introduction) |
+| Token Name                     | `.env` Name      | Where to Get / Setting Value                                                      |                                                                                                                                                                        Reference |
+| :----------------------------- | :--------------- | :-------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Hugging Face User Access Token | `HF_TOKEN`       | [Hugging Face Settings](https://huggingface.co/settings/tokens)                   |                                                                                                                                 [Hugging Face Docs](https://huggingface.co/docs) |
+| Google Gemini API Key          | `GOOGLE_API_KEY` | [Google AI Studio](https://aistudio.google.com/api-keys)                          | [Gemini API Docs](https://ai.google.dev/gemini-api/docs/quickstart) and [LangChain Google Integration Docs](https://docs.langchain.com/oss/python/integrations/providers/google) |
+| Groq API Key                   | `GROQ_API_KEY`   | [Groq Console](https://console.groq.com/keys)                                     |                                                                                                                        [Groq API Docs](https://console.groq.com/docs/quickstart) |
+| OpenAI API Key                 | `OPENAI_API_KEY` | [OpenAI API Platform](https://platform.openai.com/settings/organization/api-keys) |                                                                                              [OpenAI API Reference](https://platform.openai.com/docs/api-reference/introduction) |
 
 </details>
 
@@ -107,7 +97,7 @@ Here is an ever-growing list of Keys and Private Access Tokens used throughout t
 
 <br />
 
-### [`utils/env_variables_setup.py`](utils/env_variables_setup.py)
+### [`utils/env_variables_setup.py`](./utils/env_variables_setup.py)
 
 This is a simple script with only three functions.
 
